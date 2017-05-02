@@ -113,9 +113,8 @@ video {
     height: 406px; 
     overflow: hidden; 
     background-size: cover; 
-    background-position: center center;}
-
-
+    background-position: center center;
+}
 .covervid-video {
     height: auto;
     width: 1257px;
@@ -134,7 +133,6 @@ video {
     width: 100%;
     height: 100%;
 }
-
 img.hero{
     background-image: url('../image/hero_spot3.png');
     background-position: cover;
