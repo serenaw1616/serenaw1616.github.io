@@ -100,23 +100,13 @@ video {
     vertical-align: baseline;
     object-fit: contain;
     overflow: hidden;
+    width: 100%;
 }
- .covervid-wrapper {
+.masthead {
     position: relative;
     min-width: 720px;
-    width: 1257px; 
-    height: 406px; 
-    overflow: hidden; 
-    background-size: cover; 
-    background-position: center center;
 }
-.covervid-video {
-    height: auto;
-    width: 1257px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.masthead-video {
     z-index: 0;
 }
 .masthead-overlay {
@@ -127,6 +117,30 @@ video {
     bottom: 0; right: 0;
     width: 100%;
     height: 100%;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    font-weight: 700;
+    font-size: 110px;
+    text-align: center;
+    height: 120px;
+    line-height: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    
+}
+h1 span {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.43em;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 7px;
+    opacity: 0.5;
 }
 img.hero{
     background-image: url('../image/hero_spot3.png');
@@ -143,6 +157,7 @@ header{
         justify-content: space-around;
     margin: 0px 200px 0px 200px;
 }
+
 header img{
     border: 2px solid black;
     border-radius: 50%;
@@ -150,27 +165,17 @@ header img{
     width: 250px;
     margin: 20px 0px 0px 0px;
 }
-h1{
-  /*  position: absolute;
-    text-align: center; */
-    font-family: 'Raleway', sans-serif;
-    font-size: 90px;
-    color: #222;
-    margin: 20px 0px 20px 0px;
-    text-shadow: 0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 5px 10px rgba(0,0,0,.25),
-    0 10px 10px rgba(0,0,0,.2),
-    0 20px 20px rgba(0,0,0,.15);
+
+#intro{
+    position: relative;
+    width: 80%;
 }
-h2{
+.name_intro{
+    position: absolute;
+    top: 70px; 
+}
+
+ h2{
     font-size: 50px;
     text-align: center;
     font-weight: lighter;
@@ -187,8 +192,26 @@ h3{
     z-index: 10;
     top: 0;
 }
-section{
-    background-color: #ccc;
+
+ 
+.portfolio{
+    /* background-color: #ccc; */
+    background-image: url('../img/shoes_field.jpg');
+     background-position: cover;
+    margin: 0;
+    opacity: 0.8;
+}
+.myLatestWork{
+    font-weight: bold;
+}
+.myResume{
+    font-weight: bold;
+}
+.myEducation{
+    font-weight: bold;
+}
+.mySkills{
+    font-weight: bold;
 }
 section p{
     text-align: center;
