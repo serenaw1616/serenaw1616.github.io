@@ -195,11 +195,11 @@ h3{
 
  
 .portfolio{
-    /* background-color: #ccc; */
-    background-image: url('../img/shoes_field.jpg');
+    background-color: #ccc;
+    /* background-image: url('../img/shoes_field.jpg');
      background-position: cover;
     margin: 0;
-    opacity: 0.8;
+    opacity: 0.8;  */
 }
 .myLatestWork{
     font-weight: bold;
