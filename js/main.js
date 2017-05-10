@@ -1,12 +1,22 @@
 /* $('.covervid-video').coverVid(1920, 1080); */
-$('h2').hide();
-var h2Scroll = $('h2').offset().top;
+
+
+var h2Scroll = $('.myLatestWork').offset().top;
+var h2Scroll2 = $('.myResume').offset().top;
+
+$('.myLatestWork').hide();
+$('.myResume').hide();
 $(window).on('scroll', function () {
 	var distanceScrolled = $(window).scrollTop();
-		if (distanceScrolled >= h2Scroll){
-			$('h2').slideDown(600);
+  var distanceScrolled2 = $(window).scrollTop();
+		if (distanceScrolled >= (h2Scroll - 600)){
+			$('.myLatestWork').slideDown(600);
+		}	
+    	if (distanceScrolled2 >= (h2Scroll2 - 600)){
+			$('.myResume').slideDown(600);
 		}	
 });
+
 
 $('button').on('click', function(event) {
 event.preventDefault();
