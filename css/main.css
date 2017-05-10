@@ -68,7 +68,7 @@ fieldset {
 
 body{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 1.4em;
     color: #222;
 } 
 hr {
@@ -81,7 +81,7 @@ hr {
 }
 nav {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 0.8em;
     color: #766d6d;
     text-align: center;  
     margin: 10px 0px 10px 0px; 
@@ -123,7 +123,7 @@ h1 {
     position: absolute;
     width: 100%;
     font-weight: 700;
-    font-size: 110px;
+    font-size: 6.5em;
     text-align: center;
     height: 120px;
     line-height: 1;
@@ -152,25 +152,31 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: center;
-    margin: 0px 200px 0px 200px;
+    margin: 0 200px 0 200px;
 }
 
 header img{
     border: 2px solid black;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    margin: 20px 0px 0px 0px;
+    height: 10em;
+    width: 10em;
+    margin: 1em 0 0 0;
 }
 
 #intro{
-    width: 80%;
+    width: 60%;
 }
 
 .name_intro{
-    padding-top: 70px; 
+    padding: 2.0em 0.6em 0 0; 
+} 
+
+#profile{
+    width: 20%;
+    
 }
 
  h2{
@@ -297,21 +303,57 @@ footer p{
     padding: 0px 10px 0px 10px;
 }
 
+@media screen and (max-width: 960px){
+    .myProjects {
+    width: 90%;  
+}
+nav{
+    font-size: .5em;
+}
+h1{
+    font-size: 3.5em;
+    padding-top: 2em;
+}
+#intro{
+    width: 50%;
+}
+
+p.name_intro{
+    padding: 1em 0.3em 0 0;
+    font-size: .65em;
+     
+} 
+
+#profile{
+    width: 40%;
+}
+header img{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 6em;
+    width: 6em;
+    margin: 1em 0 0 0;
+}
+    }
+
 @media screen and (max-width: 660px){
     .myProjects {
     width: 90%;  
 }
     }
 
-    @media screen and (max-width: 450px){
-    .myProjects {
+@media screen and (max-width: 450px){
+.myProjects {
     width: 90%;  
 }
 .masthead {
-
     width: 100%;
 }
-    }
+h1{
+    font-size: 2.5em;
+    padding-top: 1em;
+}
+}
 
 /* ==========================================================================
    Helper classes

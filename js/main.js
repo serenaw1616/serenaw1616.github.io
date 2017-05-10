@@ -1,6 +1,5 @@
 /* $('.covervid-video').coverVid(1920, 1080); */
 
-
 var h2Scroll = $('.myLatestWork').offset().top;
 var h2Scroll2 = $('.myResume').offset().top;
 var h2Scroll3 = $('.myEducation').offset().top;
