@@ -183,8 +183,7 @@ header img:hover{
 } 
 
 #profile{
-    width: 20%;
-    
+    width: 20%;   
 }
 
  h2{
@@ -240,8 +239,21 @@ section p{
 
 }
 .myProjects {
-    width: 30%;  
+    width: 30%;     
 }
+.myProjects:hover { 
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 section img {
      border: 1px solid black;
      max-width: 100%;
@@ -454,6 +466,14 @@ button{
     width: 50%;
 }
 }
+
+
+@media screen and (max-width: 350px){
+h1{
+    font-size: 2.5em;
+    padding-top: 0.25em;
+}
+}    
 
 /* ==========================================================================
    Helper classes
