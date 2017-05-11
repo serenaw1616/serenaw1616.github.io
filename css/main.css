@@ -131,7 +131,8 @@ h1 {
     top: 0;
     bottom: 0;
     margin: auto;
-    color: #fff;   
+    color: #fff;
+    text-shadow:0px 0px 10px #000;   
 }
 h1 span {
     display: block;
@@ -141,13 +142,6 @@ h1 span {
     text-transform: uppercase;
     padding-left: 7px;
 }
-/*img.hero{
-    background-image: url('../image/hero_spot3.png');
-    background-position: cover;
-    height: 350px;
-    width: 100%;
-    margin: 0;
-} */
 header{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -198,10 +192,6 @@ h3{
 .portfolio{
     background-color: #ccc;
     width: 100%;
-    /* background-image: url('../img/shoes_field.jpg');
-     background-position: cover;
-    margin: 0;
-    opacity: 0.8;  */
 }
 .myLatestWork{
     font-weight: bold;
