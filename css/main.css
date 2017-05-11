@@ -87,6 +87,7 @@ nav {
     margin: 10px 0 10px 0; 
     padding: 0.5em 0 0.5em 0;
     background-color: #ffffff;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -146,9 +147,11 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: center;
+        -webkit-box-pack: center;
+            justify-content: center;
     margin: auto;
     width: 80%;
 }
@@ -213,7 +216,8 @@ section p{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
    margin: auto;
@@ -223,15 +227,29 @@ section p{
     width: 30%;     
 }
 .myProjects:hover { 
-    animation: roll 3s infinite;
-    transform: rotate(30deg);
+    -webkit-animation: roll 3s infinite; 
+            animation: roll 3s infinite;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+}
+@-webkit-keyframes roll {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 @keyframes roll {
   0% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 section img {
