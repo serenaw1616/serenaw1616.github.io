@@ -144,13 +144,13 @@ h1 span {
     text-transform: uppercase;
     padding-left: 7px;
 }
-img.hero{
+/*img.hero{
     background-image: url('../image/hero_spot3.png');
     background-position: cover;
     height: 350px;
     width: 100%;
     margin: 0;
-}
+} */
 header{
     display: -webkit-box;
     display: -ms-flexbox;

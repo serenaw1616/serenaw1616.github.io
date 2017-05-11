@@ -16,7 +16,7 @@ $(window).on('scroll', function () {
   var distanceScrolled3 = $(window).scrollTop();
   var distanceScrolled4 = $(window).scrollTop();
   var distanceScrolled5 = $(window).scrollTop();
-		if (distanceScrolled >= (h2Scroll - 600)){
+		if (distanceScrolled >= (h2Scroll - 800)){
 			$('.myLatestWork').slideDown(600);
 		}	
     	if (distanceScrolled2 >= (h2Scroll2 - 600)){
