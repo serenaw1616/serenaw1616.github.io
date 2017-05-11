@@ -6,9 +6,6 @@
         <title>Serena White</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
          <link rel="shortcut icon" href="img/favicon.png">
@@ -20,16 +17,11 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <!-- Add your site or application content here -->
-        <nav>
-            <a href="#">Home</a> | 
-            <a href="#">Portfolio</a> | 
-            <a href="#">Contact</a>
-        </nav>
-<!-- Next Steps as of May 2nd
+
+        <!-- Next Steps as of May 11th
    
-   3.  img elements fade-in
+   3.  
    4.  check for px and remove
    6.  get email working
    7. check/add links for social and for nav
@@ -38,32 +30,37 @@
   10. put favicon in root 
 
 -->
-
-     <!--   <div class="covervid-wrapper">
-    <video class="covervid-video" autoplay loop muted  poster="./img/hero_spot3.png">
-       <source src="assets/videos/dreamscapes.mp4" type="video/mp4">
-	   <source src="assets/videos/dreamscapes.webm" type="video/webm">
-    </video>
-</div> -->
-         <p><img class="hero" src="./img/hero_spot3.png" alt="Serena White laptop hands typing"></p>  
-        
+        <nav>
+            <a href="#">Home</a> | 
+            <a href="#">Portfolio</a> | 
+            <a href="#">Contact</a>
+        </nav>
+        <section class="masthead">
+		<video class="masthead-video" autoplay loop muted poster="./img/hero_spot3.png">
+			<!-- 
+            <source src="assets/videos/sf_bay2.mp4" type="video/mp4"> -->
+            <source src="assets/videos/sf_bay_11MB.mp4" type="video/mp4"> 
+			<source src="assets/videos/dreamscapes.webm" type="video/webm">
+		</video>
+		<div class="masthead-overlay"></div>
+		<h1>Serena White<span>Front End Web Developer</span></h1>
+	</section>
         
  <header>  
-<div id="name_intro">
-    <h1>Serena White</h1>
-    <p>I'm Serena a Front End Web Developer based out of the San Francisco Bay Area. I have 12 years experience in HTML and content management. I specialize in responsive web development.</p>
+<div id="intro">
+    <p class="name_intro">Hello, Serena is my name and websites are my game!  I'm a Front End Web Developer based out of the San Francisco Bay Area. I have 12 years experience in HTML, email marketing and content management. I specialize in responsive web development.</p>
 </div>
- <div id="profile"><img src="./img/serena-square.jpg" alt="Serena White photo"></div>
+ <div id="profile"><img src="./img/serena-square.jpg" alt="Serena White's Profile photo"></div>
 </header>
-<section>
-    <hr id="latestWork">
-<h2  class"myLatestWork" >My Latest Work</h2>
-<div id="projects">
-   <p><img class="myProjects" src="./img/hair_by_theresa_project.png" alt="Project number 1"></p> 
-   <p><img class="myProjects" src="./img/essential_oils_project.png" alt="Project number 2"></p> 
-   <p><img class="myProjects" src="./img/flamingo_skateboards_project.png" alt="Project number 3"></p> 
+<section class="portfolio">
+    <hr>
+<h2 id="latestWork" class="myLatestWork">My Latest Work</h2>
+<div class="projects">
+   <div class="myProjects"><img  src="./img/hair_by_theresa_project.png" alt="Hair by Theresa Thumbnail"></div> 
+   <div class="myProjects"><img src="./img/essential_oils_project.png" alt="Yoga and Essential Oils Thumbnail"></div>
+   <div class="myProjects"><img src="./img/flamingo_skateboards_project.png" alt="Flamingo Skateboards Thumbnail"></div>
 </div>
-<h2>My Resume</h2>
+<h2 class="myResume">My Resume</h2>
 <h3>Employer Name</h3>
 <p>Job title</p>
 <p>Date - Date</p>
@@ -71,13 +68,13 @@
 <p>Job title</p>
 <p>Date - Date</p>
 
-<h2>Education</h2>
+<h2 class="myEducation">Education</h2>
 <h3>General Assembly</h3>
 <p>Front End Web Development (FEWD) Class</p>
 <h3>DeVry University</h3>
 <p>Bachelor's Degree Computer Information Systems</p>
 
-<h2>Skills</h2>
+<h2 class="mySkills">Skills</h2>
 <ul>
     <li>HTML 5</li>
     <li>CSS3</li>
@@ -87,7 +84,7 @@
 <hr>
 </section>
 
-<h2>Let's Get In Touch</h2>
+<h2 class="getIntouch">Let's Get In Touch</h2>
 <form>
         <div><input type="text" id="name" placeholder="Name"></div>
         <div><input type="email" id="email" placeholder="Email"></div>
@@ -105,7 +102,7 @@
 			</div>
     <p id="copyright">Designed and Developed by Serena White</p>
 </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
