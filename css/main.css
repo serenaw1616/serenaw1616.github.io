@@ -365,18 +365,33 @@ button{
     }
 
 @media screen and (max-width: 660px){
+    .projects {
+   margin: auto;
+   width: 70%;
+}
     .myProjects {
-    width: 90%;  
+    width: 65%;  
 }
     }
 
 @media screen and (max-width: 450px){
+#intro{
+    width: 100%;
+}
 
+p.name_intro{
+    padding: 1em 0.3em 0 0;
+    font-size: 0.9em;    
+} 
+
+#profile{
+    width: 100%;
+}
 header img{
     border: 2px solid black;
     border-radius: 50%;
-    height: 4em;
-    width: 4em;
+    height: 6.5em;
+    width: 6.5em;
     margin: 1em 0 0 0;
 }
     
@@ -394,10 +409,10 @@ form{
     width: 90%;
 }
 input{
-    width: 13em;
+    width: 12em;
 }
 textarea{
-    width:  13.2em; 
+    width:  12.2em; 
     height: 8em;
 }
 
