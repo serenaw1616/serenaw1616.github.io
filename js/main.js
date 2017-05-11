@@ -4,26 +4,32 @@ var h2Scroll = $('.myLatestWork').offset().top;
 var h2Scroll2 = $('.myResume').offset().top;
 var h2Scroll3 = $('.myEducation').offset().top;
 var h2Scroll4 = $('.mySkills').offset().top;
+var h2Scroll5 = $('.getIntouch').offset().top;
 $('.myLatestWork').hide();
 $('.myResume').hide();
 $('.myEducation').hide();
 $('.mySkills').hide();
+$('.getIntouch').hide();
 $(window).on('scroll', function () {
 	var distanceScrolled = $(window).scrollTop();
   var distanceScrolled2 = $(window).scrollTop();
   var distanceScrolled3 = $(window).scrollTop();
   var distanceScrolled4 = $(window).scrollTop();
+  var distanceScrolled5 = $(window).scrollTop();
 		if (distanceScrolled >= (h2Scroll - 600)){
-			$('.myLatestWork').slideDown(600);
+			$('.myLatestWork').slideDown(800);
 		}	
-    	if (distanceScrolled2 >= (h2Scroll2 - 600)){
-			$('.myResume').slideDown(600);
+    if (distanceScrolled2 >= (h2Scroll2 - 600)){
+			$('.myResume').slideDown(800);
 		}	
     if (distanceScrolled3 >= (h2Scroll3 - 600)){
-			$('.myEducation').slideDown(600);
+			$('.myEducation').slideDown(800);
 		}
-      if (distanceScrolled4 >= (h2Scroll4 - 600)){
-			$('.mySkills').slideDown(600);
+    if (distanceScrolled4 >= (h2Scroll4 - 600)){
+			$('.mySkills').slideDown(800);
+		}
+     if (distanceScrolled5 >= (h2Scroll5 - 600)){
+			$('.getIntouch').slideDown(800);
 		}	
 });
 
