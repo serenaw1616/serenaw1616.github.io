@@ -85,6 +85,10 @@ nav {
     color: #766d6d;
     text-align: center;  
     margin: 10px 0px 10px 0px; 
+    padding: 0.5em 0 0.5em 0;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
 }
 nav a{
     color: #766d6d;
@@ -247,6 +251,9 @@ section ul{
 section li{
      margin: 0px;
      padding: 0px;
+}
+.getIntouch{
+    font-weight: bold;
 }
 form{
     display: -webkit-box;
