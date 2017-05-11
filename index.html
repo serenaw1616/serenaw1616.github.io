@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-         <link rel="shortcut icon" href="img/favicon.png">
+         <link rel="shortcut icon" href="favicon.png">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -19,22 +19,12 @@
         <![endif]-->
         <!-- Add your site or application content here -->
 
-        <!-- Next Steps as of May 11th
-   
-   3.  
-   4.  check for px and remove
-   6.  get email working
-   7. check/add links for social and for nav
-   8. update content
-   9. clean up source code
-  10. put favicon in root 
-
--->
         <nav>
-            <a href="#">Home</a> | 
-            <a href="#">Portfolio</a> | 
-            <a href="#">Contact</a>
+            <a href="#home">Home</a> | 
+            <a href="#portfolioLink">Portfolio</a> | 
+            <a href="#contactLink">Contact</a>
         </nav>
+        <a id="home"></a>
         <section class="masthead">
 		<video class="masthead-video" autoplay loop muted poster="./img/hero_spot3.png">
 			<!-- 
@@ -53,6 +43,7 @@
  <div id="profile"><img src="./img/serena-square.jpg" alt="Serena White's Profile photo"></div>
 </header>
 <section class="portfolio">
+    <a id="portfolioLink"></a>
     <hr>
 <h2 id="latestWork" class="myLatestWork">My Latest Work</h2>
 <div class="projects">
@@ -61,12 +52,12 @@
    <div class="myProjects"><img src="./img/flamingo_skateboards_project.png" alt="Flamingo Skateboards Thumbnail"></div>
 </div>
 <h2 class="myResume">My Resume</h2>
-<h3>Employer Name</h3>
-<p>Job title</p>
-<p>Date - Date</p>
-<h3>Employer Name</h3>
-<p>Job title</p>
-<p>Date - Date</p>
+<h3>Storage Networking Industry Association (SNIA)</h3>
+<p>Website Manager</p>
+<p>August 2006 - Current</p>
+<h3>Grizzly Designs</h3>
+<p>Web Designer / Team Manager</p>
+<p>January 2003 - August 2006</p>
 
 <h2 class="myEducation">Education</h2>
 <h3>General Assembly</h3>
@@ -82,8 +73,8 @@
     <li>JQuery</li>
 </ul>
 <hr>
+<a id="contactLink"></a>
 </section>
-
 <h2 class="getIntouch">Let's Get In Touch</h2>
 <form>
         <div><input type="text" id="name" placeholder="Name"></div>
@@ -96,9 +87,9 @@
     <hr>
     <p>Serena White | 925.336.1246 | Dublin, CA</p>
 			<div class="social-links">
-				<a href="#"><img src="./img/facebook-icon.png"  class="img-social-fb" alt="Facebook"></a>
-				<a href="#"><img src="./img/linkedin-icon.png" class="img-social-fb" alt="LinkedIn"></a>
-                <a href="#"><img src="./img/email-icon.png" class="img-social-fb" alt="Email"></a>
+				<a href="https://www.facebook.com/serena.white1616" target="_blank"><img src="./img/facebook-icon.png"  class="img-social-fb" alt="Facebook"></a>
+				<a href="https://www.linkedin.com/in/serenabuckholz" target="_blank"><img src="./img/linkedin-icon.png" class="img-social-fb" alt="LinkedIn"></a>
+                <a href="mailto:serenaw1616@gmail.com" target="_blank"><img src="./img/email-icon.png" class="img-social-fb" alt="Email"></a>
 			</div>
     <p id="copyright">Designed and Developed by Serena White</p>
 </footer>
