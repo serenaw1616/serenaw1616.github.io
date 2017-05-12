@@ -73,7 +73,7 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include your own success html here -->
  
-Thank you for contacting me. I will be in touch with you very soon.
+<h2>Thank you for contacting me. I will be in touch with you very soon.</h2>
  
 <?php
  
